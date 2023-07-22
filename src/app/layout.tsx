@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
-        <MainNavigation className="text-2xl p-5" />
+        <MainNavigation className="absolute top-0 left-0 right-0 z-50 text-2xl p-5" />
         {children}
       </body>
     </html>
