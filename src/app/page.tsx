@@ -1,11 +1,12 @@
 import ScrollButton from '@/components/scroll-button';
 import MouseTail from '@/components/mouse-tail';
 import WordSphere from '@/components/word-sphere';
+import GitHubRepos from '@/components/github-repos';
 
 export default function Home() {
   return (
     <>
-      <header className="flex items-center overflow-hidden min-h-screen w-full relative m-0">
+      <header className="relative flex items-center overflow-hidden min-h-screen w-full m-0">
         <div className="container z-10 text-center">
           <h1 className="text-9xl mb-10">DevOps Engineer & Developer</h1>
           <p className="text-4xl">Jamie S Machon</p>
@@ -30,6 +31,9 @@ export default function Home() {
             </p>
           </article>
           <WordSphere className="cursor-grab" />
+        </section>
+        <section className="container grid grid-cols-4 gap-4">
+          <GitHubRepos />
         </section>
       </main>
     </>

@@ -44,11 +44,6 @@ const MainNavigation = ({ className }: MainNavigationProps) => {
               </a>
             </li>
             <li>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </li>
-            <li>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
@@ -56,6 +51,11 @@ const MainNavigation = ({ className }: MainNavigationProps) => {
             <li>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
             </li>
             <li>
