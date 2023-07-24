@@ -41,12 +41,12 @@ export function wordSphere(canvas: any, texts: string[], counts: number[], optio
   let clicked = false,
     lastX: number,
     lastY: number;
-  canvas.current.addEventListener('mousedown', (event) => {
+  canvas.current.addEventListener('mousedown', (event: any) => {
     clicked = true;
     lastX = event.screenX;
     lastY = event.screenY;
   });
-  canvas.current.addEventListener('mousemove', (event) => {
+  canvas.current.addEventListener('mousemove', (event: any) => {
     if (!clicked) return;
     let dx = event.screenX - lastX;
     let dy = event.screenY - lastY;
@@ -62,8 +62,8 @@ export function wordSphere(canvas: any, texts: string[], counts: number[], optio
 
     if (!looping) startLoop();
   });
-  canvas.current.addEventListener('mouseup', (e) => (clicked = false));
-  canvas.current.addEventListener('mouseleave', (e) => (clicked = false));
+  canvas.current.addEventListener('mouseup', (e: any) => (clicked = false));
+  canvas.current.addEventListener('mouseleave', (e: any) => (clicked = false));
 
   function rot(x: number, y: number, t: number): [number, number] {
     return [x * Math.cos(t) - y * Math.sin(t), x * Math.sin(t) + y * Math.cos(t)];
@@ -117,7 +117,7 @@ export function wordSphere(canvas: any, texts: string[], counts: number[], optio
     if (looping) window.requestAnimationFrame(rendererLoop);
     renderer();
 
-    // deacceleration - dirty code xD
+    // deceleration - dirty code xD
     if (vx > 0) vx = vx - 0.01;
     if (vy > 0) vy = vy - 0.01;
     if (vx < 0) vx = vx + 0.01;

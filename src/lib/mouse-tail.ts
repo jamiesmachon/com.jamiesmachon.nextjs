@@ -11,7 +11,7 @@ export function mouseTail(canvas: any) {
     canvas.current.height = innerHeight;
   });
 
-  canvas.current.addEventListener('mousemove', (e) => {
+  canvas.current.addEventListener('mousemove', (e: any) => {
     mouse.x = e.x;
     mouse.y = e.y;
 
@@ -21,7 +21,7 @@ export function mouseTail(canvas: any) {
     }
   });
 
-  canvas.current.addEventListener('click', (e) => {
+  canvas.current.addEventListener('click', (e: any) => {
     mouse.x = e.x;
     mouse.y = e.y;
 
