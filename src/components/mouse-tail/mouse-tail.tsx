@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 import styles from './mouse-tail.module.scss';
 
 const MouseTail = ({ className }: MouseTailProps) => {
-  const mouserTailRef = useRef<HTMLAnchorElement>(null);
+  const mouserTailRef = useRef(null);
 
   useEffect(() => {
     // do something here with the canvas

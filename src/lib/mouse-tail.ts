@@ -1,4 +1,4 @@
-export function mouseTail(canvas: { current: HTMLCanvasElement }) {
+export function mouseTail(canvas: any) {
   const ctx = canvas.current.getContext('2d');
   const particlesArray: Particle[] = [];
   let hue = 0;
