@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <header className="relative flex items-center overflow-hidden min-h-screen w-screen m-0">
         <div className="container z-10">
-          <h1 className="text-3xl md:text-7xl xl:text-9xl mb-10">DevOps Engineer & Developer</h1>
+          <h1 className="text-3xl md:text-7xl xl:text-9xl mb-10">DevOps Engineer &amp; Developer</h1>
           <p className="text-2xl md:text-4xl xl:text-6xl">Jamie S Machon</p>
         </div>
         <ScrollButton scrollTo="#about" className="absolute bottom-5 left-0 right-0 z-10 text-center" />
