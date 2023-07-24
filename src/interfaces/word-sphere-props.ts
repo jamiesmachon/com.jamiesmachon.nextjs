@@ -1,3 +1,3 @@
-export interface WorkSphereProps {
+export interface WordSphereProps {
   className?: string;
 }
