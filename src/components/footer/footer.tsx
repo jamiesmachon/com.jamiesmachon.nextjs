@@ -1,15 +1,17 @@
 'use client';
-import { useEffect } from 'react';
-import { cn } from '@/lib/utils';
+
+import Link from 'next/link';
+import Image from 'next/image';
 import SocialLinks from '@/components/social-links';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="bg-gray-900 text-white">
       <div className="container py-20">
-        <div className="flex flex-col text-center">
-          <h3 className="text-4xl mb-5">DevOps Engineer & Developer</h3>
-          <p className="text-base mb-5">Jamie S Machon</p>
+        <div className="flex items-center justify-between md:flex-row flex-col">
+          <Link href="/" className="md:mb-0 mb-9">
+            <Image src="/logo.png" alt="Jamie S Machon Logo" width={200} height={55} priority />
+          </Link>
           <SocialLinks />
         </div>
       </div>

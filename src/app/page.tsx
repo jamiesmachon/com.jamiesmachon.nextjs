@@ -2,21 +2,22 @@ import ScrollButton from '@/components/scroll-button';
 import MouseTail from '@/components/mouse-tail';
 import WordSphere from '@/components/word-sphere';
 import GitHubRepos from '@/components/github-repos';
+import ContactForm from '@/components/contact-form';
 
 export default function Home() {
   return (
     <>
-      <header className="relative flex items-center overflow-hidden min-h-screen w-full m-0">
+      <header className="relative flex items-center overflow-hidden min-h-screen w-screen m-0">
         <div className="container z-10">
-          <h1 className="text-9xl mb-10">DevOps Engineer & Developer</h1>
-          <p className="text-4xl">Jamie S Machon</p>
+          <h1 className="text-3xl md:text-7xl xl:text-9xl mb-10">DevOps Engineer & Developer</h1>
+          <p className="text-2xl md:text-4xl xl:text-6xl">Jamie S Machon</p>
         </div>
-        <ScrollButton />
+        <ScrollButton scrollTo="#about" className="absolute bottom-5 left-0 right-0 z-10 text-center" />
         <MouseTail className="cursor-crosshair" />
       </header>
       <main>
-        <section id="about" className="container flex items-center gap-9 py-20">
-          <div>
+        <section id="about" className="container items-center md:py-20 py-10 flex flex-col lg:flex-row">
+          <div className="lg:w-1/2 lg:pr-4 lg:mb-0 mb-9">
             <h2 className="text-4xl mb-5">About me</h2>
             <article>
               <p className="text-base mb-2">
@@ -32,13 +33,21 @@ export default function Home() {
               </p>
             </article>
           </div>
-          <WordSphere className="cursor-grab" />
+          <div className="lg:w-1/2 lg:pl-4">
+            <WordSphere className="cursor-grab" />
+          </div>
         </section>
-        <section id="projects" className="container py-20">
+
+        <section id="projects" className="container md:py-20 py-10">
           <h2 className="text-4xl mb-5">Portfolio</h2>
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid gap-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
             <GitHubRepos />
           </div>
+        </section>
+
+        <section id="contact" className="container md:py-20 py-10">
+          <h2 className="text-4xl mb-5">Contact</h2>
+          <ContactForm />
         </section>
       </main>
     </>

@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Jamie S Machon',
   description: 'DevOps Engineer & Developer',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -17,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <MainNavigation className="absolute top-0 left-0 right-0 z-50 text-2xl p-5" />
+          <MainNavigation />
           {children}
           <Footer />
         </ThemeProvider>

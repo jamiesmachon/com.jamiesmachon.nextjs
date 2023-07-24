@@ -38,8 +38,8 @@ export function wordSphere(
   // Hi-DPI support
   canvas.current.width = width * 2;
   canvas.current.height = height * 2;
-  canvas.current.style.width = `${width}px`;
-  canvas.current.style.height = `${height}px`;
+  canvas.current.style.width = '100%';
+  canvas.current.style.height = '100%';
   ctx.scale(2, 2);
 
   // scrolling
