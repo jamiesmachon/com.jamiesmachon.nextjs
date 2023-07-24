@@ -21,15 +21,15 @@ export default function Home() {
             <h2 className="text-4xl mb-5">About me</h2>
             <article>
               <p className="text-base mb-2">
-                Hi there! My name is Jamie, and I'm a DevOps Engineer and developer. I'm passionate about using
-                technology to develop beautiful and elegant software that helps solve problems and make people's lives
-                easier. Whether it's automating a tedious task or building a beautiful website, I love the feeling of
-                creating something that makes a difference.
+                Hi there! My name is Jamie, and I&apos;m a DevOps Engineer and developer. I&apos;m passionate about
+                using technology to develop beautiful and elegant software that helps solve problems and make
+                people&apos;s lives easier. Whether it&apos;s automating a tedious task or building a beautiful website,
+                I love the feeling of creating something that makes a difference.
               </p>
               <p className="text-base">
                 In my free time, you can usually find me tinkering with new technologies or contributing to open-source
-                projects. I'm always looking for ways to improve my skills and learn new things, and I believe that the
-                best way to do that is by working with others and sharing knowledge.
+                projects. I&apos;m always looking for ways to improve my skills and learn new things, and I believe that
+                the best way to do that is by working with others and sharing knowledge.
               </p>
             </article>
           </div>
