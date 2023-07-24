@@ -5,12 +5,7 @@
 
 import { WordSphereOptions } from '@/interfaces/word-sphere-options';
 
-export function wordSphere(
-  canvas: { current: HTMLCanvasElement },
-  texts: string[],
-  counts: number[],
-  options: WordSphereOptions,
-) {
+export function wordSphere(canvas: any, texts: string[], counts: number[], options: WordSphereOptions) {
   const PI = Math.PI; // happy math!
   const {
     width = 800,

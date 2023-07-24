@@ -11,7 +11,7 @@ import { WordSphereOptions } from '@/interfaces/word-sphere-options';
 
 const WordSphere = ({ className }: WordSphereProps) => {
   const { theme } = useTheme();
-  const worldSphereRef = useRef<HTMLCanvasElement>(null);
+  const worldSphereRef = useRef(null);
 
   useEffect(() => {
     const texts = [
